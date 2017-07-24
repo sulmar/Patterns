@@ -1,6 +1,5 @@
 <Query Kind="Program" />
 
-
 // Wzorzec projektowy Template Method jest wzorcem czynnościowym.
 
 // Definiuje on za pomocą abstrakcji szkielet algorytmu, który jest w pełni realizowany dopiero w klasach potomnych.
@@ -22,6 +21,8 @@ void Main()
 	calculator = new PercentageDiscountCalculator(0.2f, 50);
 
 	result = calculator.Calculate(100);
+	
+	
 
 	result.Dump("PercentageDiscountCalculator");
 
@@ -69,7 +70,7 @@ public class PercentageDiscountCalculator : Calculator
 	private readonly decimal minimumAmount;
 	private readonly float ratio;
 
-	public PercentageDiscountCalculator(float ratio, decimal minimumAmount)
+	public PercentageDiscountCalculator(float ratio, decimal minimumAmpriount)
 	{
 		this.ratio = ratio;
 		this.minimumAmount = minimumAmount;

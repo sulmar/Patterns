@@ -1,19 +1,10 @@
 <Query Kind="Program" />
 
-// Wzorzec projektowy Interpreter jest wzorcem czynnościowym.
+// Wzorzec projektowy Factory jest wzorcem kreacyjnym.
 
 
-// Jego zadaniem jest interpretacja poleceń innego języka.
-// Dany język rokładany jest na części gramatyczne i potem na zorientowaną obiektowo hierarchię.
+// Przykład tworzenia wyrażenia za pomocą fabryki
 
-// Interpreter składa się z następujących elementów:
-// - Context: przetrzymuje dane, które powinny poddać się interpretacji
-// - Abstract Expression: klasa abstrakcyjna która interpretuje polecenia, 
-// - Expression – konkretne klasy, które interpretują treść Contextu dla poszczególnych przypadków.
-
-
-// na przykładzie odwrotnej notacji polskiej
-// https://pl.wikipedia.org/wiki/Odwrotna_notacja_polska
 void Main()
 {
 	string expression = "2 3 + 5 *";

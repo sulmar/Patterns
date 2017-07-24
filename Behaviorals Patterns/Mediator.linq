@@ -88,8 +88,3 @@ public class ConcreteMediator : Mediator
 	}
 
 }
-
-
-
-
-
