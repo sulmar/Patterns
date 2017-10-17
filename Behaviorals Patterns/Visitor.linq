@@ -1,5 +1,7 @@
 <Query Kind="Program" />
 
+// Wzorzec Visitor umożliwia przejście po złożonym obiekcie i przetworzenie go a przy tym zapewnia odseparowanie przetwarzanego obiektu od logiki
+
 void Main()
 {
 	var document = new Document();
@@ -62,7 +64,6 @@ public class Document
 	{
 		parts.Add(part);
 	}
-
 
 	public void Accept(IVisitor visitor)
 	{
