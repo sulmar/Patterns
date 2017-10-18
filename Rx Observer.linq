@@ -14,7 +14,7 @@
 
 void Main()
 {
-	
+	// Install-Package System.Reactive
 	var items = GetItems();
 	
 	IObservable<string> observable = items.ToObservable();
