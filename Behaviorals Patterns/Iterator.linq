@@ -20,9 +20,9 @@ void Main()
 }
 
 // Define other methods and classes here
-public abstract class AggregateBase
+public interface AggregateBase
 {
-	public abstract IIterator CreateIterator();
+	IIterator CreateIterator();
 }
 
 
@@ -30,7 +30,7 @@ public class ConcreteAggregate : AggregateBase
 {
 	private ArrayList _items = new ArrayList();
 
-	public override IIterator CreateIterator()
+	public IIterator CreateIterator()
 	{
 		return new ConcreteIterator(this);
 	}
